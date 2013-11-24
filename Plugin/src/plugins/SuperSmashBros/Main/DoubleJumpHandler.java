@@ -34,30 +34,28 @@ public class DoubleJumpHandler implements Listener{
 	public void onFly(PlayerToggleFlightEvent event){
 		// Actual double jumping mechanics here
 		Player ply = event.getPlayer();
-		if((ply.hasPermission("ssb.doublejump")) && (ply.getGameMode() != GameMode.CREATIVE)) doubleJumpGo(ply, event);
-		// Yeah, I just put that into one line of code. Mostly for the ego boost, but it could help make the plugin a bit more flexible
-	}
-	
-	private void doubleJumpGo(Player ply, Event event){
-		// Config variables
-		double height = (plugin.getConfig().getDouble("Doubles.doubleJumpHeight"));
-		double velocity = (plugin.getConfig().getDouble("Doubles.doubleJumpDistance"));
-		boolean sound = (plugin.getConfig().getBoolean("Booleans.soundEffectOnDoubleJump"));
-		boolean effect = (plugin.getConfig().getBoolean("Booeans.smokeEffectOnDoubleJump"));
-		
-		// Actual stuff to do
-		if(event instanceof PlayerToggleFlightEvent) ((PlayerToggleFlightEvent) event).setCancelled(true);
-		ply.setAllowFlight(false);
-		ply.setFlying(false);
-		ply.setVelocity(ply.getLocation().getDirection().multiply(velocity).setY(height));
-		if(sound == true) ply.playSound(ply.getLocation(), Sound.ZOMBIE_INFECT, 1.0F, 2.0F);
-		if(effect == true){
-	          try {
-	        	  // I made craftbukkit and the Bukkit API both dependencies so we can make effects like this without having to fall back onto another API for it. Even though I think we should make ProtocolLib a referenced library because it is gonna save us a ton of pain in the future
-					ParticleEffects.SMOKE.sendToPlayer(ply, ply.getLocation(), 1.0F, 1.0F, 1.0F, 1.0F, 40);
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
+		if((ply.hasPermission("ssb.doublejump")) && (ply.getGameMode() != GameMode.CREATIVE)){
+			// Config variables
+			double height = (plugin.getConfig().getDouble("Doubles.doubleJumpHeight"));
+			double velocity = (plugin.getConfig().getDouble("Doubles.doubleJumpDistance"));
+			boolean sound = (plugin.getConfig().getBoolean("Booleans.soundEffectOnDoubleJump"));
+			boolean effect = (plugin.getConfig().getBoolean("Booeans.smokeEffectOnDoubleJump"));
+			
+			// Actual stuff to do
+			event.setCancelled(true);
+			ply.setAllowFlight(false);
+			ply.setFlying(false);
+			ply.setVelocity(ply.getLocation().getDirection().multiply(velocity).setY(height));
+			if(sound == true) ply.playSound(ply.getLocation(), Sound.ZOMBIE_INFECT, 1.0F, 2.0F);
+			if(effect == true){
+		          try {
+		        	  // I made craftbukkit and the Bukkit API both dependencies so we can make effects like this without having to fall back onto another API for it. Even though I think we should make ProtocolLib a referenced library because it is gonna save us a ton of pain in the future
+						ParticleEffects.SMOKE.sendToPlayer(ply, ply.getLocation(), 1.0F, 1.0F, 1.0F, 1.0F, 40);
+					} catch (Exception e) {
+						e.printStackTrace();
+					}
+			}
+			
 		}
 	}
 }
