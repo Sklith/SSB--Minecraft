@@ -1,0 +1,18 @@
+TO-DO LIST:
+- Add arenas
+- Create internal ELO system
+- Add ranked matches/social matches
+- Join/Leave signs
+- Shops for knockout sounds and particle trails
+- In-game currency, Smash XP
+- Feature to use economy as currency in-game
+- Feature to enable/disable the arena in different worlds, but still allow signs
+- Signs for shop
+- Dependencies on Vault and ProtocolLib
+- Damage system
+- Use scoreboards or TagAPI to color playernames, configurable
+- Configure whether or not to show damage percentage under player names
+- Watch numerous cat videos
+- Create items
+- BungeeCord support
+- Configurable messages
