@@ -1,0 +1,8 @@
+name: SSB
+version: 0.1
+description: "A plugin made to recreate Shotbow Network's SMASH minigame."
+authors: [AwesomeMin3r2000,Incomprehendable]
+main: plugins.SuperSmashBros.Main.SuperSmashBros
+permissions:
+  ssb.doublejump:
+    default: op

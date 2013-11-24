@@ -1,0 +1,13 @@
+# Configuration file for SSB: Minecraft
+# Plugin by AwesomeMin3r and Incomprehendable
+# BukkitDev: <linkhere>
+# Please read the configuration page on the BukkitDev project before editing this file!
+Booleans:
+  doubleJumpEnabled: true
+  soundOnDoubleJump: true
+  smokeOnDoubleJump: true
+Doubles:
+  doubleJumpHeight: 1.0
+  doubleJumpDistance: 1.6
+Strings:
+  developerMessage: '&eHey %name, this awesome server uses your SSB plugin!'
