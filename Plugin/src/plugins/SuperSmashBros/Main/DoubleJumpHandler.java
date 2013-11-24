@@ -25,7 +25,7 @@ public class DoubleJumpHandler implements Listener{
 	public void onMove(PlayerMoveEvent event){
 		Player ply = event.getPlayer();
 		// This checks for a certain permission, makes sure their game mode is survival or adventure, and makes sure they are on the ground
-		if((ply.hasPermission("ssb.doublejump")) && (ply.getGameMode() != GameMode.CREATIVE) & (ply.getLocation().getBlock().getRelative(BlockFace.DOWN).getType() != Material.AIR)){
+		if((ply.hasPermission("ssb.doublejump") || ply.isOp()) && (ply.getGameMode() != GameMode.CREATIVE) & (ply.getLocation().getBlock().getRelative(BlockFace.DOWN).getType() != Material.AIR)){
 			ply.setAllowFlight(true);
 			// I don't really like this method because move events are fired a lot, so on bigger servers, it may cause some lag. I'll try to find an optimized method for this later.
 		}
@@ -34,7 +34,7 @@ public class DoubleJumpHandler implements Listener{
 	public void onFly(PlayerToggleFlightEvent event){
 		// Actual double jumping mechanics here
 		Player ply = event.getPlayer();
-		if((ply.hasPermission("ssb.doublejump")) && (ply.getGameMode() != GameMode.CREATIVE)){
+		if((ply.hasPermission("ssb.doublejump") || ply.isOp()) && (ply.getGameMode() != GameMode.CREATIVE)){
 			// Config variables
 			double height = (plugin.getConfig().getDouble("Doubles.doubleJumpHeight"));
 			double velocity = (plugin.getConfig().getDouble("Doubles.doubleJumpDistance"));
