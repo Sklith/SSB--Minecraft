@@ -31,6 +31,7 @@ public class DoubleJumpHandler implements Listener{
 		}
 	}
 	
+	@EventHandler
 	public void onFly(PlayerToggleFlightEvent event){
 		// Actual double jumping mechanics here
 		Player ply = event.getPlayer();
