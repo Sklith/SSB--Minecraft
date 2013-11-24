@@ -3,6 +3,7 @@
 # BukkitDev: <linkhere>
 # Please read the configuration page on the BukkitDev project before editing this file!
 Booleans:
+  developerFeature: true
   doubleJumpEnabled: true
   soundOnDoubleJump: true
   smokeOnDoubleJump: true
