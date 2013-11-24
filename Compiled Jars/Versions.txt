@@ -2,4 +2,5 @@
 === This folder is for placing the jars that you compliled of each version of the plugin ===
 ============================================================================================
 Compiled Versions:
-None available at the moment.
+SSB-Minecraft (Version 1.0 Beta)
+SSB-Minecraft (Version 1.0.0.2 Beta)
