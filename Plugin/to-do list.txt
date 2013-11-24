@@ -16,3 +16,6 @@ TO-DO LIST:
 - Create items
 - BungeeCord support
 - Configurable messages
+- Kits?
+- Internal banning/kicking system
+- If a player in-game is AFK, kick them out of the game and take a configurable amount of ELO off them.
