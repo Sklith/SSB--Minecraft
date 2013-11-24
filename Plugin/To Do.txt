@@ -1,0 +1,4 @@
+To Do List:
+ - Add Steven's Double Jump
+ - Create system for storing ELO
+ - Create advanced knockback system(?)
