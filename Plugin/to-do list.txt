@@ -16,3 +16,4 @@ TO-DO LIST:
 - Create items
 - BungeeCord support
 - Configurable messages
+- Kits?
