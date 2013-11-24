@@ -1,5 +1,9 @@
 package plugins.SuperSmashBros.Main;
 
-public class SuperSmashBros {
+import org.bukkit.plugin.java.JavaPlugin;
+
+public class SuperSmashBros extends JavaPlugin {
+	
+	
 
 }
