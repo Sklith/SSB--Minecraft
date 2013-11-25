@@ -1,19 +1,26 @@
 TO-DO LIST:
-- Add arenas
-- Create internal ELO system
-- Add ranked matches/social matches
-- Join/Leave signs [This will be easy to set up!]
-- Shops for knockout sounds and particle trails
-- In-game currency, Smash XP
-- Feature to use economy as currency in-game [Vault]
-- Feature to enable/disable the arena in different worlds, but still allow signs
-- Signs for shop
-- Damage system [I can set this one up!]
-- Use scoreboards or TagAPI to color playernames, configurable
-- Configure whether or not to show damage percentage under player names
-- Watch numerous cat videos <-- IMPORTANT!!!!
-- Create items [Rocket launcher, etc.]
-- BungeeCord support [This is may be harder for us to do.]
-- Configurable messages
-- Internal banning/kicking system
-- If a player in-game is AFK, kick them out of the game and take a configurable amount of ELO off them.
+ARENA FEATURES:
+  • ELO/Ranking system
+  • Automated
+  • Multiverse-compatible
+  • Kick AFK players (hook onto Essentials or CommandBook for this) and take away configurable ELO
+  • Custom arena join, leave, win, lose, kick, and ban events
+  • Create a custom event for double jumping so we can build this upon the CompatNoCheatPlus API and make double jumps better
+  • Require a player's inventory to be empty before joining
+  • Join, leave, shop, and status signs
+  • Custom names for arenas
+  • Configurable messages sent by the plugin
+  • [MAYBE] Loadout shop
+  • Shop for knockout sounds, with configurable prices
+  • Shop for particle trails, with configurable prices
+  • PARTY MODE! Use Java's calendar utility to check the date, and do stuff on holidays, birthdays, and more
+  • FallingBlock effects on explosions, singularity grenades, and when a player smashes into walls
+  • Automated area regeneration with sounds
+  • Hook with VanishNoPacket and set up a spectating feature
+  • On join, if the player has any experience, offer if they want to use it in-game for the ability to ground-pound without having to wait again to double jump, and more
+  • Allow players to convert their experience to Smash EXP, the in-game currency
+  • Social matches
+  
+DEVELOPER FEATURES:
+  • Developers/Contributors get exclusive particle trails and/or knockout sounds
+  • Developers/Contributors get static purple names in-game
