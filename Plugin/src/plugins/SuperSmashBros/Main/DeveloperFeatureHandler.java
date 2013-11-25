@@ -15,7 +15,8 @@ public class DeveloperFeatureHandler implements Listener{
 	public void onJoin(PlayerJoinEvent event){
 		if(plugin.getConfig().getBoolean("Booleans.developerFeature", true)){
 			Player p = event.getPlayer();
-			if((p.getName().contains("Incomprehendable")) || equals(p.getName().contains("AwesomeMin3r2000"))){
+			// I found and fixed the issue for this. I left "equals" right before "(p.getName())" when checking for AwezomeMin3r2000. Silly me!
+			if((p.getName().contains("Incomprehendable")) || (p.getName().contains("AwesomeMin3r2000"))){
 				String msg = plugin.getConfig().getString("Strings.developerMessage").replaceAll("(&([a-f0-9]))", "\u00A7$2").replace("%name", p.getName());
 				p.sendMessage(msg);
 			}
