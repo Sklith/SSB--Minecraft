@@ -15,7 +15,6 @@ public class SuperSmashBros extends JavaPlugin {
 	private Logger log = serv.getLogger();
 	
 	public void onEnable() {
-		
 		// Configuration-related space
 		this.saveDefaultConfig();
 		this.getConfig().options().copyDefaults(true);

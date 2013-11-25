@@ -15,7 +15,7 @@ public class DeveloperFeatureHandler implements Listener{
 	public void onJoin(PlayerJoinEvent event){
 		if(plugin.getConfig().getBoolean("Booleans.developerFeature", true)){
 			Player p = event.getPlayer();
-			if((p.getName().contentEquals("Incomprehendable")) || equals(p.getName().contentEquals("AwesomeMin3r2000"))){
+			if((p.getName().contains("Incomprehendable")) || equals(p.getName().contains("AwesomeMin3r2000"))){
 				String msg = plugin.getConfig().getString("Strings.developerMessage").replaceAll("(&([a-f0-9]))", "\u00A7$2").replace("%name", p.getName());
 				p.sendMessage(msg);
 			}
