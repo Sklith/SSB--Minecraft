@@ -12,3 +12,5 @@ Doubles:
   doubleJumpDistance: 1.6
 Strings:
   developerMessage: '&eHey %name, this awesome server uses your SSB plugin!'
+Integers:
+  afkTakeAway: 5
