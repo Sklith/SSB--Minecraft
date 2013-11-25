@@ -9,7 +9,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public class SuperSmashBros extends JavaPlugin {
 	
-	// Variables and stuff
+	// Variables
 	private Server serv = Bukkit.getServer();
 	private PluginManager pm = serv.getPluginManager();
 	private Logger log = serv.getLogger();
@@ -25,7 +25,7 @@ public class SuperSmashBros extends JavaPlugin {
 		// This is just some empty space for later.
 		log.info("SSB: Minecraft enabled successfully! Yay!");
 		log.info("Plugin by AwesomeMin3r2000 and Incomprehendable!");
-		
+		// Let's make the adjustment to ProtocolLib tomorrow, because if we use craftbukkit.jar as a dependency, we'd have to update this plugin EVERY TIME Bukkit updates.
 	}
 	public void onDisable() {
 		// Empty space for later
