@@ -50,8 +50,11 @@ public class SuperSmashBros extends JavaPlugin {
 			} else {
 				
 				sender.sendMessage("Error: You must be a player in game to do this!");
+				return false;
 				
 			}
+			
+			return false;
 			
 		}
 		
