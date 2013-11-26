@@ -4,6 +4,8 @@ import java.util.logging.Logger;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Server;
+import org.bukkit.command.Command;
+import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.entity.PlayerDeathEvent;
@@ -34,6 +36,26 @@ public class SuperSmashBros extends JavaPlugin {
 		// Empty space for later
 		
 		log.info("SSB: Minecraft disabled!");
+		
+	}
+	
+	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
+		
+		if ((cmd.getName().equalsIgnoreCase("ssb")) && (args.equals("join")) && (sender.hasPermission("ssb.join"))) {
+			
+			if (sender instanceof Player) {
+				
+				// This is a work in progress, AwesomeMin3r2000 is trying to figure out a way to get and set player lives
+				
+			} else {
+				
+				sender.sendMessage("Error: You must be a player in game to do this!");
+				
+			}
+			
+		}
+		
+		return false;
 		
 	}
 	
