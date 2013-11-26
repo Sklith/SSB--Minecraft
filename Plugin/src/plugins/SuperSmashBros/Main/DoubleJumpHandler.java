@@ -25,6 +25,7 @@ public class DoubleJumpHandler implements Listener{
 	public void onMove(PlayerMoveEvent event){
 		// Variables
 		Player ply = event.getPlayer();
+		ply.setLevel(2);
 		// Makes sure that the player has the right permission, is not in creative, and is not in midair, then allows them to fly.
 		if((ply.hasPermission("ssb.doublejump")) && (ply.getGameMode() != GameMode.CREATIVE) && (ply.getLocation().getBlock().getRelative(BlockFace.DOWN).getType() != Material.AIR)){
 			ply.setAllowFlight(true);
@@ -38,13 +39,13 @@ public class DoubleJumpHandler implements Listener{
 		// Makes sure that the player has the permission and is not in creative.
 		if((ply.hasPermission("ssb.doublejump")) && (ply.getGameMode() != GameMode.CREATIVE)) doDoubleJump(ply, event);
 	}
-	
 
 	// This is the actual part where we make the player "jump" again.
 	public void doDoubleJump(Player ply, Event event){
 		// This will make sure the 'event' argument is the player double jumping
 		if(event instanceof PlayerToggleFlightEvent){
 			((PlayerToggleFlightEvent) event).setCancelled(true);
+			ply.setLevel(0);
 		}
 		// Variables
 		Location loc = ply.getLocation();
