@@ -41,7 +41,7 @@ public class SuperSmashBros extends JavaPlugin {
 	
 	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
 		
-		if ((cmd.getName().equalsIgnoreCase("ssb")) && (args.equals("join")) && (sender.hasPermission("ssb.join"))) {
+		if ((cmd.getName().equalsIgnoreCase("ssb")) && (sender.hasPermission("ssb.join"))) {
 			
 			if (sender instanceof Player) {
 				
