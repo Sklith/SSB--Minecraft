@@ -4,6 +4,9 @@ import java.util.logging.Logger;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Server;
+import org.bukkit.entity.Player;
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.entity.PlayerDeathEvent;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -46,5 +49,20 @@ public class SuperSmashBros extends JavaPlugin {
 		
 	}
 	
+	@EventHandler
+	public void onDeath(PlayerDeathEvent event) {
+		
+		Player player = event.getEntity();
+		
+		/*
+		 * Here we will handle subtracting a life each time a player dies in match.
+		 * The final product will start you with about 3 lives, and each time you die, we will subtract one. For this to work the way I have it planned,
+		 * I need to figure out a way to get when a player joins a match of SSB. If I can get those event handlers setup, I can easily setup a lives system, as well
+		 * as the pds (player death system).
+		 * 
+		 * (Added by AwesomeMin3r2000)
+		 */
+		
+	}
 
 }
