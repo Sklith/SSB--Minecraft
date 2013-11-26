@@ -34,5 +34,17 @@ public class SuperSmashBros extends JavaPlugin {
 		
 	}
 	
+	public void onSmashWin() {
+		
+		
+		
+	}
+	
+	public void onSmashLose() {
+		
+		
+		
+	}
+	
 
 }
