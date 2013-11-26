@@ -1,4 +1,4 @@
-SSB - MINECRAFT
+SSB - MINECRAFT : A BUKKIT PLUGIN
 
 BukkitDev: none yet
 
