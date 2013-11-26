@@ -4,6 +4,11 @@
 Compiled Versions:
 SSB-Minecraft (Version 1.0 Beta)
 SSB-Minecraft (Version 1.0.0.2 Beta)
+SSB-Minecraft (Version 1.0.0.3 Beta)
+SSB-Minecraft (Version 1.0.0.4 Beta)
+SSB-Minecraft (Version 1.0.0.5 Beta)
 
-Non-Compiled Versions:
-None avaliable ATM.
+These, they are VERY EARLY versions of the plugin, only offering a small fraction of what we
+have planned! These are for testing purposes only! If you feel so inclined to, you can
+download them and test them, making sure what we have so far works the way it should, and
+reporting the results to us. Thank you!
