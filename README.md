@@ -22,9 +22,7 @@ If you want to contribute but cannot code, do not fret! You can be a project doc
 in charge of writing the plugin information on BukkitDev, and any other sites, the project is featured on, if necessary.
 You will receive all of the Contributor perks.
 
-Thanks for reading, and wish us luck!
+Thanks for reading, and wish us luck,
 
 
-SSB DEVELOPMENT TEAM
-AwesomeMin3r2000
-Incomprehendable
+THE SSB DEVELOPMENT TEAM (AwesomeMin3r2000 and Incomprehendable)
