@@ -46,6 +46,7 @@ public class SuperSmashBros extends JavaPlugin {
 			if (sender instanceof Player) {
 				
 				// This is a work in progress, AwesomeMin3r2000 is trying to figure out a way to get and set player lives
+				sender.sendMessage("ssb join");
 				
 			} else {
 				
