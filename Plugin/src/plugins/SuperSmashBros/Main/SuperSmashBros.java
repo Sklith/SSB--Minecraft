@@ -45,6 +45,9 @@ public class SuperSmashBros extends JavaPlugin {
 			
 			if (sender instanceof Player) {
 				
+				// Creating a HashMap with Player and Integer keys, then adding a player and 3 to the hashmap with a player joins the game.
+				// Then, on death events, we can just get the integer key, and subtract it by one, then reset it.
+				// And we can check if the integer is 1 when a player dies, and if so, kick them out of the game.
 				// This is a work in progress, AwesomeMin3r2000 is trying to figure out a way to get and set player lives
 				sender.sendMessage("ssb join");
 				
