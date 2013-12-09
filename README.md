@@ -5,7 +5,7 @@ BukkitDev: none yet
 SSB - Minecraft stands for 'Super Smash Bros - Minecraft'
 
 This plugin is made to recreate the SMASH game, from the Shotbow Network, which can be found here: http://shotbow.net/
-This is not only going to be a recreate of SMASH, but we're gonna try to make this the most accurate SSB plugin as of
+This is not only going to recreate SMASH, but we're gonna try to make this the most accurate SSB plugin as of
 yet. We do have extremely premature builds out that you should not download unless you are testing. We cannot release an
 ETA on when the plugin will enter P.ALPHA, which is the version where the plugin will function decently well and where we
 will put more time into bug fixing than adding more features. So, if you have suggestions, let us know! Explore the
