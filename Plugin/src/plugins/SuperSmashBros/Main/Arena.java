@@ -7,23 +7,25 @@ import org.bukkit.Location;
 
 public class Arena {
 
-	int id = 0;
-	Location lobbyspawn = null;
-	List<String> players = new ArrayList<String>();
-	List<Location> startLocations = new ArrayList<Location>();
-	List<String> queuedPlayers = new ArrayList<String>();
-	boolean itemDrop = true;
-	boolean restoreArena = true;
-	boolean isRanked = false;
-	boolean earnXp = false;
-	boolean enableParticleEffects = true;
-	boolean enableKnockoutSounds = true;
-	boolean useTagAPI = true;
-	boolean scoreboards = true;
-	boolean doubleJump = true;
-	int winXp = 0;
-	int killXp = 10;
-	int afkKickXp = 5;
+	private int id = 0;
+	private Location lobbyspawn = null;
+	private List<String> players = new ArrayList<String>();
+	private List<Location> startLocations = new ArrayList<Location>();
+	private List<String> queuedPlayers = new ArrayList<String>();
+	private boolean itemDrop = true;
+	private boolean restoreArena = true;
+	private boolean isRanked = false;
+	private boolean earnXp = false;
+	private boolean enableParticleEffects = true;
+	private boolean enableKnockoutSounds = true;
+	private boolean useTagAPI = true;
+	private boolean scoreboards = true;
+	private boolean doubleJump = true;
+	private boolean canGrab = true;
+	private boolean canGroundPound = true;
+	private int winXp = 0;
+	private int killXp = 10;
+	private int afkKickXp = 5;
 	
 	
 	public Arena(Location lobbyspawn, int id, int winXp, int killXp, int afkKickXp, List<String> players, List<Location> startLocations, List<String> queuedPlayers,
@@ -53,10 +55,10 @@ public class Arena {
 	public int getId(){
 		return this.id;
 	}
-	public int winXp(){
+	public int getWinXp(){
 		return this.winXp;
 	}
-	public int killXp(){
+	public int getKillXp(){
 		return this.killXp;
 	}
 	public List<String> getPlayers(){
@@ -74,13 +76,13 @@ public class Arena {
 	public boolean isRanked(){
 		return this.isRanked;
 	}
-	public boolean scoreboards(){
+	public boolean canUseScoreboards(){
 		return this.scoreboards;
 	}
-	public boolean doubleJump(){
+	public boolean canDoubleJump(){
 		return this.doubleJump;
 	}
-	public boolean itemDrop(){
+	public boolean canItemsDrop(){
 		return this.itemDrop;
 	}
 	public boolean restoreArena(){
@@ -91,5 +93,20 @@ public class Arena {
 	}
 	public boolean enableParticleEffects(){
 		return this.enableParticleEffects;
+	}
+	public boolean canGroundPound(){
+		return this.canGroundPound;
+	}
+	public boolean canGrab(){
+		return this.canGrab;
+	}
+	public Location getLobbyLocation(){
+		return this.lobbyspawn;
+	}
+	public List<String> getQueuedPlayers(){
+		return this.queuedPlayers;
+	}
+	public int getKickedForAwayXp(){
+		return this.afkKickXp;
 	}
 }
