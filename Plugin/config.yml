@@ -2,15 +2,20 @@
 # Plugin by AwesomeMin3r and Incomprehendable
 # BukkitDev: <linkhere>
 # Please read the configuration page on the BukkitDev project before editing this file!
+# Enjoy the plugin!
 Booleans:
-  developerFeature: true
-  doubleJumpEnabled: true
-  soundOnDoubleJump: true
-  smokeOnDoubleJump: true
-Doubles:
-  doubleJumpHeight: 1.0
-  doubleJumpDistance: 1.6
-Strings:
-  developerMessage: '&eHey %name, this awesome server uses your SSB plugin!'
-Integers:
-  afkTakeAway: 5
+  DedicatedServer: false
+  Signs:
+    Join: true
+    Leave: true
+    ParticleTrailShop: true
+    KnockoutSoundShop: true
+    Lobby: true
+
+# This is the chat format in lobbies and in arenas!
+format: '&f%name &8[%elo&8]: &7%message'
+# VARIABLES!
+#
+#  %name - Chat speaker's name |  %message - Chat speaker's message
+#  %rank - Chat speaker's rank |  %tag - Plugin tag (editable in messages.yml!)
+#  %elo - Chat speaker's ELO   |  %world - Chat speaker's world
