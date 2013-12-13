@@ -7,8 +7,8 @@ import org.bukkit.inventory.ItemStack;
 
 public class ArenaPlayer {
 	private Player ply;
-	private ItemStack[] storedInv;
-	private ItemStack[] storedArmor;
+	private ItemStack[] inv;
+	private ItemStack[] armor;
 	private int elo = 1000;
 	private int food = 20;
 	private double health = 20.0;
@@ -20,8 +20,19 @@ public class ArenaPlayer {
 	
 	
 	
-	public ArenaPlayer(Player player){
+	public ArenaPlayer(Player player, ItemStack[] inv, ItemStack[] armor, int elo, int food,
+			double health, float saturation, Arena arena, GameMode inGameMode, int deaths, Location lastLoc){
 		this.ply = player;
+		this.inv = inv;
+		this.armor = armor;
+		this.elo = elo;
+		this.food = food;
+		this.health = health;
+		this.saturation = saturation;
+		this.arena = arena;
+		this.inGameMode = inGameMode;
+		this.deaths = deaths;
+		this.lastLoc = lastLoc;
 	}
 	public Player getPlayer(){
 		return this.ply;
@@ -50,11 +61,11 @@ public class ArenaPlayer {
 	public Arena getArena(){
 		return this.arena;
 	}
-	public ItemStack[] getStoredInv(){
-		return this.storedInv;
+	public ItemStack[] getInv(){
+		return this.inv;
 	}
-	public ItemStack[] getStoredArmor(){
-		return this.storedArmor;
+	public ItemStack[] getArmor(){
+		return this.armor;
 	}
 	public GameMode getGameMode(){
 		return this.inGameMode;
