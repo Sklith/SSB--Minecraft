@@ -1,9 +1,9 @@
-SUPER SMASH BROTHERS: MINECRAFT
-
-BukkitDev: none
-Plugin Website: none (will use stevens-freebuild.com once we're ready)
-Lead Developers: Incomprehendable and AwesomeMin3r2000
-Other Developers: lukasmcd14
-Documentors: Incomprehendable
-
+SUPER SMASH BROTHERS: MINECRAFT <br />
+<br />
+BukkitDev: none <br />
+Plugin Website: none (will use stevens-freebuild.com once we're ready) <br />
+Lead Developers: Incomprehendable and AwesomeMin3r2000 <br />
+Other Developers: lukasmcd14 <br />
+Documentors: Incomprehendable <br />
+ <br />
 Super Smash Brothers: Minecraft, or SSB: Minecraft, or even just SSBM, is a Bukkit plugin created to mimic the SMASH gamemode from the Shotbow Network. The plugin is being developed in 1.6.4, and will be updated once a recommended build of 1.7.2 comes out from Bukkit. The plugin will have as many features as possible, and will be as customizable as possible. Currently, the project is not for public release. You may view the source code and see how we're progressing. We cannot reliable predict a release date for the plugin. If you want to lend a hand, you can private message Incomprehendable on BukkitDev. We're only taking developers and documentors!
