@@ -1,28 +1,9 @@
-SSB - MINECRAFT : A BUKKIT PLUGIN
+SUPER SMASH BROTHERS: MINECRAFT
 
-BukkitDev: none yet
+BukkitDev: none
+Plugin Website: none (will use stevens-freebuild.com once we're ready)
+Lead Developers: Incomprehendable and AwesomeMin3r2000
+Other Developers: lukasmcd14
+Documentors: Incomprehendable
 
-SSB - Minecraft stands for 'Super Smash Bros - Minecraft'
-
-This plugin is made to recreate the SMASH game, from the Shotbow Network, which can be found here: http://shotbow.net/
-This is not only going to recreate SMASH, but we're gonna try to make this the most accurate SSB plugin as of
-yet. We do have extremely premature builds out that you should not download unless you are testing. We cannot release an
-ETA on when the plugin will enter P.ALPHA, which is the version where the plugin will function decently well and where we
-will put more time into bug fixing than adding more features. So, if you have suggestions, let us know! Explore the
-source, in the Plugin folder, you'll see 'to-do list.txt', these are our current plans, and you are more than welcome to
-add on to it.
-
-If you're a developer and want to help us out, feel free to tell us! If you contribute to this project, you'll recieve the
-Contributor perks in the game. These are exclusive particle trials, knockout sounds, and you will be given a constant
-blue name tag in-game, instead of having the green/yellow/red changing nametags. You will also be given 250 Smash XP
-(the currency in-game) on any server running this, but this is only at the server owner's discretion. They can configure
-this one!
-
-If you want to contribute but cannot code, do not fret! You can be a project documenter. This means that you will be
-in charge of writing the plugin information on BukkitDev, and any other sites, the project is featured on, if necessary.
-You will receive all of the Contributor perks.
-
-Thanks for reading, and wish us luck,
-
-
-THE SSB DEVELOPMENT TEAM (AwesomeMin3r2000 and Incomprehendable)
+Super Smash Brothers: Minecraft, or SSB: Minecraft, or even just SSBM, is a Bukkit plugin created to mimic the SMASH gamemode from the Shotbow Network. The plugin is being developed in 1.6.4, and will be updated once a recommended build of 1.7.2 comes out from Bukkit. The plugin will have as many features as possible, and will be as customizable as possible. Currently, the project is not for public release. You may view the source code and see how we're progressing. We cannot reliable predict a release date for the plugin. If you want to lend a hand, you can private message Incomprehendable on BukkitDev. We're only taking developers and documentors!
