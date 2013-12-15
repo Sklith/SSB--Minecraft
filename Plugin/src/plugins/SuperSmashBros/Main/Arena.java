@@ -7,7 +7,7 @@ import org.bukkit.Location;
 
 public class Arena {
 
-	private int id = 0;
+	private String name;
 	private Location lobbyspawn = null;
 	private List<String> players = new ArrayList<String>();
 	private List<Location> startLocations = new ArrayList<Location>();
@@ -28,11 +28,11 @@ public class Arena {
 	private int afkKickXp = 5;
 	
 	
-	public Arena(Location lobbyspawn, int id, int winXp, int killXp, int afkKickXp, List<String> players, List<Location> startLocations, List<String> queuedPlayers,
+	public Arena(Location lobbyspawn, String name, int winXp, int killXp, int afkKickXp, List<String> players, List<Location> startLocations, List<String> queuedPlayers,
 			boolean itemDrop, boolean restoreArena, boolean isRanked, boolean earnXp, boolean enableParticleEffects, boolean enableKnockoutSounds, 
 			boolean useTagAPI, boolean scoreboards, boolean doubleJump){
 		this.lobbyspawn = lobbyspawn;
-		this.id = id;
+		this.name = name;
 		this.winXp = winXp;
 		this.killXp = killXp;
 		this.afkKickXp = afkKickXp;
@@ -52,8 +52,8 @@ public class Arena {
 		this.killXp = killXp;
 		this.afkKickXp = afkKickXp;
 	}
-	public int getId(){
-		return this.id;
+	public String getName(){
+		return this.name;
 	}
 	public int getWinXp(){
 		return this.winXp;
