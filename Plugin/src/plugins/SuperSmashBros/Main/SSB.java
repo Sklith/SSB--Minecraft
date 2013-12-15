@@ -13,11 +13,14 @@ public class SSB extends JavaPlugin{
 	private PluginManager pm = s.getPluginManager();
 	private Logger log = s.getLogger();
 	
-	public void onEnable(){
+	public void onEnable() {
 		
 		log.info("SSB: Minecraft fully enabled!");
+		
 	}
-	public void onDisable(){
+	public void onDisable() {
+		
 		log.info("SSB: Minecraft disabled!");
+		
 	}
 }
