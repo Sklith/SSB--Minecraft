@@ -6,5 +6,7 @@
 	<classpathentry kind="lib" path="/SSB - Minecraft/Required Libraries/bukkit_api.jar"/>
 	<classpathentry kind="lib" path="/SSB - Minecraft/Required Libraries/ProtocolLib.jar"/>
 	<classpathentry kind="lib" path="/SSB - Minecraft/Required Libraries/TagAPI.jar"/>
+	<classpathentry kind="lib" path="/SSB - Minecraft/Required Libraries/WorldEdit.jar"/>
+	<classpathentry kind="lib" path="/SSB - Minecraft/Required Libraries/craftbukkit.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
