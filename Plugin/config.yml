@@ -4,6 +4,7 @@
 # Please read the configuration page on the BukkitDev project before editing this file!
 # Enjoy the plugin!
 Booleans:
+  Check-For-Updates: true
   DedicatedServer: false
   Signs:
     Join: true
