@@ -1,5 +1,7 @@
 package plugins.SuperSmashBros.Main;
 
+import org.bukkit.entity.Player;
+
 public class ArenaManager {
 	private static ArenaManager am = new ArenaManager();
 	
@@ -14,5 +16,19 @@ public class ArenaManager {
 		}
 		return null;
 	}
-
+	
+	public void addPlayers(Player player, String arenaName){
+		if(getArena(arenaName) != null){
+			Arena arena = getArena(arenaName);
+			if(!arena.isFull()){
+				if(!arena.isInGame()){
+					player.getInventory().clear();
+					player.setHealth(player.getMaxHealth());
+					player.setFireTicks(0);
+					player.teleport(arena.getLobbyLocation());
+				}
+			}
+		}
+		
+	}
 }

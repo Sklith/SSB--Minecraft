@@ -3,6 +3,7 @@ package plugins.SuperSmashBros.Main;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.bukkit.Bukkit;
 import org.bukkit.Location;
 
 public class Arena {
@@ -24,6 +25,7 @@ public class Arena {
 	private boolean doubleJump = true;
 	private boolean canGrab = true;
 	private boolean canGroundPound = true;
+	private boolean inGame = false;
 	private int winXp = 0;
 	private int killXp = 10;
 	private int afkKickXp = 5;
@@ -31,7 +33,7 @@ public class Arena {
 	
 	public Arena(Location lobbyspawn, String name, int winXp, int killXp, int afkKickXp, List<String> players, List<Location> startLocations, List<String> queuedPlayers,
 			boolean itemDrop, boolean restoreArena, boolean isRanked, boolean earnXp, boolean enableParticleEffects, boolean enableKnockoutSounds, 
-			boolean useTagAPI, boolean scoreboards, boolean doubleJump){
+			boolean useTagAPI, boolean scoreboards, boolean doubleJump, boolean inGame){
 		this.lobbyspawn = lobbyspawn;
 		this.name = name;
 		this.winXp = winXp;
@@ -52,6 +54,7 @@ public class Arena {
 		this.winXp = winXp;
 		this.killXp = killXp;
 		this.afkKickXp = afkKickXp;
+		this.inGame = inGame;
 		arenaObjects.add(this);
 	}
 	public String getName(){
@@ -102,7 +105,7 @@ public class Arena {
 	public boolean canGrab(){
 		return this.canGrab;
 	}
-	public boolean inFull(){
+	public boolean isFull(){
 		if(players.size() >= maxPlayers){
 			return true;
 		}else{
@@ -118,6 +121,9 @@ public class Arena {
 	public int getKickedForAwayXp(){
 		return this.afkKickXp;
 	}
+	public boolean isInGame(){
+		return this.inGame;
+	}
 	
 	// setters
 	
@@ -126,6 +132,23 @@ public class Arena {
 	}
 	public void setRanked(boolean isRanked){
 		this.isRanked = isRanked;
+	}
+	public void setStartLocations(ArrayList<Location> startLocations){
+		this.startLocations = startLocations;
+	}
+	public void setName(String name){
+		this.name = name;
+	}
+	public void setMaxPlayers(int maxPlayers){
+		this.maxPlayers = maxPlayers;
+	}
+	public void setInGame(boolean inGame){
+		this.inGame = inGame;
+	}
+	public void sendMessage(String msg){
+		for(String s : players){
+			Bukkit.getPlayer(s).sendMessage(msg);
+		}
 	}
 	
 }
