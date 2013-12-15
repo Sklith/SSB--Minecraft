@@ -12,6 +12,7 @@ public class Arena {
 	private List<String> players = new ArrayList<String>();
 	private List<Location> startLocations = new ArrayList<Location>();
 	private List<String> queuedPlayers = new ArrayList<String>();
+	private int maxPlayers;
 	private boolean itemDrop = true;
 	private boolean restoreArena = true;
 	private boolean isRanked = false;
@@ -26,7 +27,7 @@ public class Arena {
 	private int winXp = 0;
 	private int killXp = 10;
 	private int afkKickXp = 5;
-	
+	public static ArrayList<Arena> arenaObjects = new ArrayList<Arena>();
 	
 	public Arena(Location lobbyspawn, String name, int winXp, int killXp, int afkKickXp, List<String> players, List<Location> startLocations, List<String> queuedPlayers,
 			boolean itemDrop, boolean restoreArena, boolean isRanked, boolean earnXp, boolean enableParticleEffects, boolean enableKnockoutSounds, 
@@ -51,6 +52,7 @@ public class Arena {
 		this.winXp = winXp;
 		this.killXp = killXp;
 		this.afkKickXp = afkKickXp;
+		arenaObjects.add(this);
 	}
 	public String getName(){
 		return this.name;
@@ -100,6 +102,13 @@ public class Arena {
 	public boolean canGrab(){
 		return this.canGrab;
 	}
+	public boolean inFull(){
+		if(players.size() >= maxPlayers){
+			return true;
+		}else{
+			return false;
+		}
+	}
 	public Location getLobbyLocation(){
 		return this.lobbyspawn;
 	}
@@ -109,4 +118,14 @@ public class Arena {
 	public int getKickedForAwayXp(){
 		return this.afkKickXp;
 	}
+	
+	// setters
+	
+	public void setLobbyLocation(Location lobbyspawn){
+		this.lobbyspawn = lobbyspawn;
+	}
+	public void setRanked(boolean isRanked){
+		this.isRanked = isRanked;
+	}
+	
 }
