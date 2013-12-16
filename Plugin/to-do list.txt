@@ -3,73 +3,75 @@ I'll edit this list every time I can confirm that an item is completed.
 
 Let's start off with any miscellaneous features:
 	- DEVELOPER FEATURES:
-		• Consistent purple name for Developers
-		• Exclusive knockout sounds and particle trails
-		• Party mode on the plugin if it is a Developer's birthday
-		• The player count on signs turn purple if a Developer is in the game
-		• Developers get a message saying "This awesome server uses your super smash brothers plugin!" on a join
-		• Developers get one extra life in-game (Configurable by owner)
+		ï¿½ Consistent purple name for Developers
+		ï¿½ Exclusive knockout sounds and particle trails
+		ï¿½ Party mode on the plugin if it is a Developer's birthday
+		ï¿½ The player count on signs turn purple if a Developer is in the game
+		ï¿½ Developers get a message saying "This awesome server uses your super smash brothers plugin!" on a join
+		ï¿½ Developers get one extra life in-game (Configurable by owner)
 	- CONTRIBUTOR FEATURES:
-		• Constant blue name for contributors
-		• They get all knockout sounds and trails for free
-		• The player count on signs turn blue if a Contributor is playing (can be overriden if a Developer joins)
-		• One life in-game, configurable by the owner
+		ï¿½ Constant blue name for contributors
+		ï¿½ They get all knockout sounds and trails for free
+		ï¿½ The player count on signs turn blue if a Contributor is playing (can be overriden if a Developer joins)
+		ï¿½ One life in-game, configurable by the owner
 	- EASTER EGGS:
-		• Losing within 1 minute of the game will send the loser a message saying "You've met with a terrible fate, haven't you?"
-		• Spawning in the void will send you the same message as above
+		ï¿½ Losing within 1 minute of the game will send the loser a message saying "You've met with a terrible fate, haven't you?"
+		ï¿½ Spawning in the void will send you the same message as above
 	- PARTY MODE FEATURES: (if enabled)
 		- DEVELOPERS' BIRTHDAYS:
-			• Players will spawn with the heads of developers
-			• All knockout sounds are replaced with the exclusive Developer knockout sound
-			• Signs become purple
+			ï¿½ Players will spawn with the heads of developers
+			ï¿½ All knockout sounds are replaced with the exclusive Developer knockout sound
+			ï¿½ Signs become purple
 		- CONTRIBUTORS' BIRTHDAYS:
-			• Same features as Developer, but can be overriden by Developers!
+			ï¿½ Same features as Developer, but can be overriden by Developers!
 		- CHRISTMAS:
-			• Players get leather armor that constantly changes colors from red to green
-			• Everyone gets one more life as a Christmas gift
+			ï¿½ Players get leather armor that constantly changes colors from red to green
+			ï¿½ Everyone gets one more life as a Christmas gift
 		- HALLOWEEN:
-			• Knockout sounds are replaced with Ghast screams
-			• Players get orange and black leather armor
-			• Players get pumpkin heads
-			• Yellow name tags are replaced with orange name tags
+			ï¿½ Knockout sounds are replaced with Ghast screams
+			ï¿½ Players get orange and black leather armor
+			ï¿½ Players get pumpkin heads
+			ï¿½ Yellow name tags are replaced with orange name tags
 		- VALENTINE'S DAY:
-			• Heart effects play when you double jump, and get knocked back very far
-			• Red name tags are replaced with pink
-			• Signs become pink
+			ï¿½ Heart effects play when you double jump, and get knocked back very far
+			ï¿½ Red name tags are replaced with pink
+			ï¿½ Signs become pink
 		- EASTER:
-			• Name tag colors are switched around, so green will be the new red, and vice-versa
-			• Players will spawn with Notch's head
-			• Items will break randomly
+			ï¿½ Name tag colors are switched around, so green will be the new red, and vice-versa
+			ï¿½ Players will spawn with Notch's head
+			ï¿½ Items will break randomly
 --------------------------------------------------------------------------------------------------------------------------------
 Now, for arena features:
-	• [MAYBE] String names for arenas, instead of IDs
-	• [MAYBE] MySQL, to save and view stats
-	• Item spawning
-	• TagAPI to change the colors of names of players, to imply their damage
-	• Scoreboards to show damage under player names, and lives remaining in sidebar
-	• BarAPI to show how much time is left in the game
-	• Hook onto WorldEdit for arena creation
-	• Multiverse support, multiple arenas in multiple worlds
-	• Ground-pounding, and grabbing
-	• FallingBlock effects on explosions and when a player gets knocked back far enough into a wall
-	• Shops for knockout sounds and particle trails with configurable prices
-	• ELO system
-	• Ranked and social matches
-	• Custom chat format in-arenas
-	• Signs for joining, leaving, shopping, going to lobby, and viewing the current game
-	• BungeeCord support
-	• Lilypad support
+	ï¿½ [MAYBE] String names for arenas, instead of IDs
+	ï¿½ [MAYBE] MySQL, to save and view stats
+	ï¿½ Item spawning
+	ï¿½ TagAPI to change the colors of names of players, to imply their damage
+	ï¿½ Scoreboards to show damage under player names, and lives remaining in sidebar
+	ï¿½ BarAPI to show how much time is left in the game
+	ï¿½ Hook onto WorldEdit for arena creation
+	ï¿½ Multiverse support, multiple arenas in multiple worlds
+	ï¿½ Ground-pounding, and grabbing
+	ï¿½ FallingBlock effects on explosions and when a player gets knocked back far enough into a wall
+	ï¿½ Shops for knockout sounds and particle trails with configurable prices
+	ï¿½ ELO system
+	ï¿½ Ranked and social matches
+	ï¿½ Custom chat format in-arenas
+	ï¿½ Signs for joining, leaving, shopping, going to lobby, and viewing the current game
+	ï¿½ BungeeCord support
+	ï¿½ Lilypad support
 	- CUSTOMIZABLE SETTINGS: (per arena)
-		• if players can double jump or not
-		• if knockout sounds and particle trails are enabled
-		• if tagAPI is used, same with barAPI and scoreboards
-		• if items can spawn
-		• number of lives at start
-		• time for an arena
-		• if players get kicked for being AFK
-		• amount of exp earned on kills, and wins
-		• amount of exp taken away when kicked for being AFK
-		• number of players allowed in an arena
-		• if the arena is ranked or social
-		• if the arena restores itself in-game
-		• if chat can go in or out of the arena
+		ï¿½ if players can double jump or not
+		ï¿½ if knockout sounds and particle trails are enabled
+		ï¿½ if tagAPI is used, same with barAPI and scoreboards
+		ï¿½ if items can spawn
+		ï¿½ number of lives at start
+		ï¿½ time for an arena
+		ï¿½ if players get kicked for being AFK
+		ï¿½ amount of exp earned on kills, and wins
+		ï¿½ amount of exp taken away when kicked for being AFK
+		ï¿½ number of players allowed in an arena
+		ï¿½ if the arena is ranked or social
+		ï¿½ if the arena restores itself in-game
+		ï¿½ if chat can go in or out of the arena
+		â€¢ a Knockback system. Ammount of knockback added up to the player determines if the map will destroy if you hit a wall etc.
+		â€¢ instant death at 1000 knockback level. (Knockback level is shown above the player.)
