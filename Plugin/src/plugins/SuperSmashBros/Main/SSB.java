@@ -21,7 +21,7 @@ public class SSB extends JavaPlugin{
 	public void onEnable() {
 		log.info("SSB: Minecraft fully enabled!");
 		
-		if(getConfig().getBoolean("Check-For-Updates") == true){
+		if(getConfig().getBoolean("Check-For-Updates") == true){ // must be like this else you wont get apporved.
 			Updater updater = new Updater(this, 69480, this.getFile(), UpdateType.DEFAULT, true);
 			if(updater.getResult() == UpdateResult.UPDATE_AVAILABLE){
 				this.getLogger().info("New version available! " + updater.getLatestName());
