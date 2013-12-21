@@ -3,10 +3,9 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="lib" path="/SSB - Minecraft/Required Libraries/Vault.jar"/>
-	<classpathentry kind="lib" path="/SSB - Minecraft/Required Libraries/bukkit_api.jar"/>
 	<classpathentry kind="lib" path="/SSB - Minecraft/Required Libraries/ProtocolLib.jar"/>
 	<classpathentry kind="lib" path="/SSB - Minecraft/Required Libraries/TagAPI.jar"/>
 	<classpathentry kind="lib" path="/SSB - Minecraft/Required Libraries/WorldEdit.jar"/>
-	<classpathentry kind="lib" path="/SSB - Minecraft/Required Libraries/craftbukkit.jar"/>
+	<classpathentry kind="lib" path="/SSB - Minecraft/Required Libraries/Bukkit API 1.7.2.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
