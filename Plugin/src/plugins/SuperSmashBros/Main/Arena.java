@@ -29,6 +29,7 @@ public class Arena {
 	private int winXp = 0;
 	private int killXp = 10;
 	private int afkKickXp = 5;
+	private List<Location> itemSpawnLocations = new ArrayList<Location>();
 	public static ArrayList<Arena> arenaObjects = new ArrayList<Arena>();
 	
 	public Arena(Location lobbyspawn, String name, int winXp, int killXp, int afkKickXp, List<String> players, List<Location> startLocations, List<String> queuedPlayers,
@@ -124,9 +125,15 @@ public class Arena {
 	public boolean isInGame(){
 		return this.inGame;
 	}
+	public List<Location> getItemSpawnLocations(){
+		return this.itemSpawnLocations;
+	}
 	
 	// setters
 	
+	public void setItemSpawnLocation(Location loc){
+		this.itemSpawnLocations.add(loc);
+	}
 	public void setLobbyLocation(Location lobbyspawn){
 		this.lobbyspawn = lobbyspawn;
 	}
