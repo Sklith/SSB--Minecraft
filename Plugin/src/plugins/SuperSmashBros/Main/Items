@@ -1,9 +1,0 @@
-package plugins.SuperSmashBros.Items;
-
-public class Items {
-
-// I will continue to put items in here as I get them done. Once the arena code is done, we can work on a system to get these items to spawn in the map! :D
-// Not sure if this class is in the right place, maybe it should be moved to it's own package.
-// I'm still unsure how to use github completly, so bare with me, I will fuigure it out soon enough!
-
-// ~ DancingWalrus
