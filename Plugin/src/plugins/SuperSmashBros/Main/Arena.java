@@ -14,6 +14,7 @@ public class Arena {
 	private List<Location> startLocations = new ArrayList<Location>();
 	private List<String> queuedPlayers = new ArrayList<String>();
 	private int maxPlayers;
+	private int minPlayers;
 	private boolean itemDrop = true;
 	private boolean restoreArena = true;
 	private boolean isRanked = false;
@@ -32,7 +33,7 @@ public class Arena {
 	private List<Location> itemSpawnLocations = new ArrayList<Location>();
 	public static ArrayList<Arena> arenaObjects = new ArrayList<Arena>();
 	
-	public Arena(Location lobbyspawn, String name, int winXp, int killXp, int afkKickXp, List<String> players, List<Location> startLocations, List<String> queuedPlayers,
+	public Arena(Location lobbyspawn, String name, int winXp, int killXp, int minPlayers, int afkKickXp, List<String> players, List<Location> startLocations, List<String> queuedPlayers,
 			boolean itemDrop, boolean restoreArena, boolean isRanked, boolean earnXp, boolean enableParticleEffects, boolean enableKnockoutSounds, 
 			boolean useTagAPI, boolean scoreboards, boolean doubleJump, boolean inGame){
 		this.lobbyspawn = lobbyspawn;
@@ -40,6 +41,7 @@ public class Arena {
 		this.winXp = winXp;
 		this.killXp = killXp;
 		this.afkKickXp = afkKickXp;
+		this.minPlayers = minPlayers;
 		this.players = players;
 		this.startLocations = startLocations;
 		this.queuedPlayers = queuedPlayers;
@@ -128,11 +130,26 @@ public class Arena {
 	public List<Location> getItemSpawnLocations(){
 		return this.itemSpawnLocations;
 	}
+	public int getMinPlayers(){
+		return this.minPlayers;
+	}
 	
 	// setters
 	
 	public void setItemSpawnLocation(Location loc){
 		this.itemSpawnLocations.add(loc);
+	}
+	public void setCanDoubleJump(boolean canDoubleJump){
+		this.doubleJump = canDoubleJump;
+	}
+	public void setRestoreArena(boolean restoreArena){
+		this.restoreArena = restoreArena;
+	}
+	public void setKickedForAwayXp(int i){
+		this.afkKickXp = i;
+	}
+	public void setCanGrab(boolean canGrab){
+		this.canGrab = canGrab;
 	}
 	public void setLobbyLocation(Location lobbyspawn){
 		this.lobbyspawn = lobbyspawn;
@@ -149,8 +166,14 @@ public class Arena {
 	public void setMaxPlayers(int maxPlayers){
 		this.maxPlayers = maxPlayers;
 	}
+	public void setUseTagAPI(boolean useTagAPI){
+		this.useTagAPI = useTagAPI;
+	}
 	public void setInGame(boolean inGame){
 		this.inGame = inGame;
+	}
+	public void setMinPlayers(int minPlayers){
+		this.minPlayers = minPlayers;
 	}
 	public void sendMessage(String msg){
 		for(String s : players){
